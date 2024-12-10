@@ -1,0 +1,1 @@
+export { generateAIAnalysis } from './openai.service';

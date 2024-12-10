@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: #e9d5ff;
+  min-height: 100vh;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@layer utilities {
+  .gradient-purple {
+    @apply bg-gradient-to-br from-purple-500/20 to-purple-700/20;
+  }
+  
+  .gradient-indigo {
+    @apply bg-gradient-to-br from-indigo-500/20 to-indigo-700/20;
+  }
+  
+  .gradient-violet {
+    @apply bg-gradient-to-br from-violet-500/20 to-violet-700/20;
+  }
+  
+  .gradient-fuchsia {
+    @apply bg-gradient-to-br from-fuchsia-500/20 to-fuchsia-700/20;
+  }
+  
+  .gradient-pink {
+    @apply bg-gradient-to-br from-pink-500/20 to-pink-700/20;
+  }
+
+  .gradient-orange {
+    @apply bg-gradient-to-br from-orange-500/20 to-orange-700/20;
+  }
+}
