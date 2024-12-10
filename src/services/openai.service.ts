@@ -3,7 +3,7 @@ import { DetectedNote } from '../components/VoiceAnalysis/types';
 import { LifeSpheresState } from '../components/VoiceAnalysis/LifeSpheresQuestionnaire';
 
 const openai = new OpenAI({
-  apiKey: import.meta.env.VITE_OPENAI_KEY,
+  apiKey: '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',
   dangerouslyAllowBrowser: true
 });
 
