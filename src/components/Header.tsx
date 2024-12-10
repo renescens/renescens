@@ -28,7 +28,7 @@ const Header = () => {
           
           <motion.button
             whileTap={{ scale: 0.95 }}
-            onClick={() => navigate('/profile')}
+            onClick={() => navigate('/audioscan/profile')}
             className="p-2 rounded-full hover:bg-purple-500/20 transition-colors"
           >
             <User className="text-purple-100/60 hover:text-purple-100" />

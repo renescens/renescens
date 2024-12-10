@@ -8,13 +8,13 @@ const Navbar = () => {
   const currentPath = location.pathname.split('/')[1] || 'home';
 
   const navItems = [
-    { id: 'home', icon: <Home />, label: 'Accueil', path: '/home' },
-    { id: 'voice', icon: <Mic />, label: 'Analyse', path: '/voice' },
-    { id: 'exercises', icon: <Speech />, label: 'Exercices', path: '/exercises' },
-    { id: 'library', icon: <Music />, label: 'Sons', path: '/library' },
-    { id: 'tools', icon: <Wrench />, label: 'Outils', path: '/tools' },
-    { id: 'community', icon: <Users />, label: 'Communauté', path: '/community' },
-    { id: 'cycle', icon: <Calendar />, label: 'Cycle', path: '/cycle' }
+    { id: 'home', icon: <Home />, label: 'Accueil', path: '/audioscan' },
+    { id: 'voice', icon: <Mic />, label: 'Analyse', path: '/audioscan/voice' },
+    { id: 'exercises', icon: <Speech />, label: 'Exercices', path: '/audioscan/exercises' },
+    { id: 'library', icon: <Music />, label: 'Sons', path: '/audioscan/library' },
+    { id: 'tools', icon: <Wrench />, label: 'Outils', path: '/audioscan/tools' },
+    { id: 'community', icon: <Users />, label: 'Communauté', path: '/audioscan/community' },
+    { id: 'cycle', icon: <Calendar />, label: 'Cycle', path: '/audioscan/cycle' }
   ];
 
   return (

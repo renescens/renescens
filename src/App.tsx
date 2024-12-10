@@ -19,16 +19,16 @@ const App = () => {
     <Router>
       <DynamicBackground />
       <Routes>
-        <Route path="/auth" element={<AuthPage />} />
-        <Route path="/" element={<Navigate to="/home" />} />
-        <Route path="/home" element={<PrivateRoute><MainLayout><HomeModule /></MainLayout></PrivateRoute>} />
-        <Route path="/voice" element={<PrivateRoute><MainLayout><VoiceAnalysisModule /></MainLayout></PrivateRoute>} />
-        <Route path="/exercises" element={<PrivateRoute><MainLayout><ExerciseModule /></MainLayout></PrivateRoute>} />
-        <Route path="/library" element={<PrivateRoute><MainLayout><SoundLibraryModule /></MainLayout></PrivateRoute>} />
-        <Route path="/tools" element={<PrivateRoute><MainLayout><ToolsModule /></MainLayout></PrivateRoute>} />
-        <Route path="/community" element={<PrivateRoute><MainLayout><CommunityModule /></MainLayout></PrivateRoute>} />
-        <Route path="/cycle" element={<PrivateRoute><MainLayout><CycleModule /></MainLayout></PrivateRoute>} />
-        <Route path="/profile" element={<PrivateRoute><MainLayout><ProfilePage /></MainLayout></PrivateRoute>} />
+        <Route path="/audioscan/auth" element={<AuthPage />} />
+        <Route path="/audioscan" element={<Navigate to="/audioscan/home" />} />
+        <Route path="/audioscan/home" element={<PrivateRoute><MainLayout><HomeModule /></MainLayout></PrivateRoute>} />
+        <Route path="/audioscan/voice" element={<PrivateRoute><MainLayout><VoiceAnalysisModule /></MainLayout></PrivateRoute>} />
+        <Route path="/audioscan/exercises" element={<PrivateRoute><MainLayout><ExerciseModule /></MainLayout></PrivateRoute>} />
+        <Route path="/audioscan/library" element={<PrivateRoute><MainLayout><SoundLibraryModule /></MainLayout></PrivateRoute>} />
+        <Route path="/audioscan/tools" element={<PrivateRoute><MainLayout><ToolsModule /></MainLayout></PrivateRoute>} />
+        <Route path="/audioscan/community" element={<PrivateRoute><MainLayout><CommunityModule /></MainLayout></PrivateRoute>} />
+        <Route path="/audioscan/cycle" element={<PrivateRoute><MainLayout><CycleModule /></MainLayout></PrivateRoute>} />
+        <Route path="/audioscan/profile" element={<PrivateRoute><MainLayout><ProfilePage /></MainLayout></PrivateRoute>} />
       </Routes>
     </Router>
   );

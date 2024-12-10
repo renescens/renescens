@@ -41,7 +41,7 @@ const AuthPage: React.FC = () => {
 
     try {
       await signIn(formData.email, formData.password);
-      navigate('/profile');
+      navigate('/audioscan/profile');
     } catch (err: any) {
       setError(err.message);
     } finally {
@@ -88,7 +88,7 @@ const AuthPage: React.FC = () => {
 
     try {
       await signUp(formData.email, formData.password, formData);
-      navigate('/profile');
+      navigate('/audioscan/profile');
     } catch (err: any) {
       setError(err.message);
     } finally {

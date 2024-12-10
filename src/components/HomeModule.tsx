@@ -64,7 +64,7 @@ const HomeModule = () => {
       description: "Suivez un programme intensif de développement vocal sur 21 jours.",
       icon: <Calendar className="w-6 h-6 text-purple-100" />,
       gradient: "gradient-orange",
-      path: "/cycle"
+      path: "/audioscan/cycle"
     }
   ];
 
